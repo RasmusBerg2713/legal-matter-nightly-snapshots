@@ -1,0 +1,21 @@
+{
+  "name": "legal-matter-nightly-snapshots",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/snapshot_service.ts",
+    "start": "tsx src/snapshot_service.ts",
+    "snapshot:sample": "tsx scripts/run_nightly_snapshot.ts",
+    "test": "tsx --test test/snapshot_plan.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
